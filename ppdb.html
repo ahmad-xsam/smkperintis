@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penerimaan Peserta Didik Baru (PPDB) | SMK Perintis Kabupaten Bandung</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Informasi pendaftaran siswa baru (PPDB/SPMB) SMK Perintis Kabupaten Bandung tahun ajaran 2026/2027. Cek alur pendaftaran, persyaratan, rincian biaya, dan form simulasi.">
+    <meta name="keywords" content="PPDB SMK Perintis 2026, SPMB SMK Perintis, Daftar SMK Bandung, Alur Pendaftaran SMK Perintis">
+    <meta name="author" content="SMK Perintis Kab Bandung">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. TOP BAR INFO -->
+    <div class="bg-brand-gradient text-white py-2 d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center small font-weight-bold">
+            <div>
+                <span class="me-4"><i class="fas fa-phone me-2 text-brand-yellow"></i> 022-589-XXX / 0812-XXXX-XXXX</span>
+                <span><i class="fas fa-envelope me-2 text-brand-yellow"></i> info@smkperintis.sch.id</span>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <span><i class="fas fa-map-marker-alt me-2 text-brand-yellow"></i> Katapang Andir KM3, Bandung</span>
+                <button id="themeToggle" class="theme-toggle-btn btn-sm" title="Ganti Tema" aria-label="Ganti Tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. MAIN HEADER & NAVIGATION -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/logo.png" alt="Logo SMK Perintis" class="me-3" style="max-height: 55px; height: auto;">
+                <div>
+                    <h5 class="m-0 fw-bold tracking-tight text-brand-red">SMK PERINTIS</h5>
+                    <span class="text-muted d-block small" style="font-size: 0.75rem; font-weight: 600;">KABUPATEN BANDUNG</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggler border-0 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#smkNavbar" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-brand-red"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="smkNavbar">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="profil.html#sejarah">Sejarah Sekolah</a></li>
+                            <li><a class="dropdown-item" href="profil.html#visi-misi">Visi & Misi</a></li>
+                            <li><a class="dropdown-item" href="profil.html#struktur">Struktur Organisasi</a></li>
+                            <li><a class="dropdown-item" href="profil.html#fasilitas">Fasilitas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Program Keahlian</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="jurusan.html#tkj"><i class="fas fa-laptop-code text-brand-red me-2"></i>Teknik Komputer Jaringan</a></li>
+                            <li><a class="dropdown-item" href="jurusan.html#tkr"><i class="fas fa-car-wrench text-brand-green me-2"></i>Teknik Kendaraan Ringan</a></li>
+                            <li><a class="dropdown-item" href="jurusan.html#akuntansi"><i class="fas fa-calculator text-brand-yellow me-2"></i>Akuntansi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ppdb.html">Info PPDB / SPMB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#pendaftaran-simulasi" class="btn btn-brand-red rounded-pill px-4 fw-bold">Daftar PPDB 2026</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. BREADCRUMB HERO -->
+    <section class="bg-brand-gradient text-white py-5 text-center">
+        <div class="container py-3">
+            <h1 class="display-4 fw-bold">PPDB / SPMB T.A. 2026/2027</h1>
+            <p class="lead m-0 opacity-75">Informasi penerimaan siswa baru, alur registrasi, dan form pendaftaran simulasi</p>
+        </div>
+    </section>
+
+    <!-- 4. ALUR & PERSYARATAN -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Alur Pendaftaran (Timeline Flowchart) -->
+                <div class="col-lg-7">
+                    <h3 class="fw-bold mb-4"><i class="fas fa-route text-brand-red me-2"></i>Alur Pendaftaran PPDB</h3>
+                    <div class="timeline-flow">
+                        <div class="timeline-step">
+                            <div class="timeline-badge">1</div>
+                            <div class="timeline-content">
+                                <h5>Isi Formulir Online / Offline</h5>
+                                <p>Mengisi data pendaftaran secara mandiri lewat formulir online PPDB atau langsung datang ke sekretariat panitia sekolah.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-badge">2</div>
+                            <div class="timeline-content">
+                                <h5>Lengkapi Berkas Persyaratan</h5>
+                                <p>Menyerahkan fotokopi dokumen penunjang seperti nilai rapor, akta kelahiran, kartu keluarga, dan pas foto terbaru.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-badge">3</div>
+                            <div class="timeline-content">
+                                <h5>Uji Minat & Bakat</h5>
+                                <p>Mengikuti seleksi wawancara dan tes kompetensi minat bakat pada waktu yang ditentukan sekolah untuk memilih jurusan tepat.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-badge">4</div>
+                            <div class="timeline-content">
+                                <h5>Daftar Ulang & Registrasi Biaya</h5>
+                                <p>Setelah dinyatakan diterima, pendaftar melakukan daftar ulang administratif untuk mengunci kuota kursi kelas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Persyaratan Dokumen -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-sm p-4 rounded-4 bg-light mb-4">
+                        <h4 class="fw-bold mb-3"><i class="fas fa-file-shield text-brand-red me-2"></i>Persyaratan Dokumen</h4>
+                        <ul class="list-group list-group-flush bg-transparent">
+                            <li class="list-group-item bg-transparent border-0 ps-0"><i class="fas fa-check text-brand-green me-2"></i>Fotokopi Rapor SMP/MTs Semester 1-5 (1 Lembar)</li>
+                            <li class="list-group-item bg-transparent border-0 ps-0"><i class="fas fa-check text-brand-green me-2"></i>Fotokopi Ijazah / Surat Keterangan Lulus (SKL)</li>
+                            <li class="list-group-item bg-transparent border-0 ps-0"><i class="fas fa-check text-brand-green me-2"></i>Fotokopi Kartu Keluarga & Akta Kelahiran</li>
+                            <li class="list-group-item bg-transparent border-0 ps-0"><i class="fas fa-check text-brand-green me-2"></i>Pas Foto Berwarna Terbaru Ukuran 3x4 (3 Lembar)</li>
+                            <li class="list-group-item bg-transparent border-0 ps-0"><i class="fas fa-check text-brand-green me-2"></i>Fotokopi Kartu KIP / PKH / KKS (Bagi Jalur Afirmasi)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card border-0 shadow-sm p-4 rounded-4 bg-brand-green-gradient text-white">
+                        <h4 class="fw-bold mb-3"><i class="fas fa-hand-holding-dollar text-brand-yellow me-2"></i>Program Beasiswa</h4>
+                        <p class="small opacity-90">SMK Perintis memberikan keringanan biaya khusus bagi pendaftar melalui beberapa jalur seleksi berikut:</p>
+                        <ul class="list-unstyled small opacity-90">
+                            <li class="mb-2"><i class="fas fa-award text-brand-yellow me-2"></i><strong>Beasiswa Prestasi:</strong> Bebas biaya DSP 100% untuk peringkat 1-3 paralel SMP/MTs.</li>
+                            <li class="mb-2"><i class="fas fa-heart text-brand-yellow me-2"></i><strong>Beasiswa Yatim Piatu:</strong> Keringanan biaya SPP bulanan hingga 50% selama masa pendidikan.</li>
+                            <li class="mb-2"><i class="fas fa-briefcase text-brand-yellow me-2"></i><strong>Rekomendasi Mitra:</strong> Potongan pendaftaran khusus bagi sekolah mitra resmi SMK Perintis.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. RINCIAN BIAYA PENDIDIKAN -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Rincian Biaya Pendidikan</h2>
+                <p>Estimasi biaya administrasi PPDB dan SPP bulanan SMK Perintis Kabupaten Bandung</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="table-responsive rounded-4 shadow-sm border">
+                        <table class="table table-hover bg-white m-0 align-middle">
+                            <thead class="table-danger text-uppercase fw-bold small text-brand-red">
+                                <tr>
+                                    <th scope="col" class="py-3 ps-4">Rincian Komponen Biaya</th>
+                                    <th scope="col" class="py-3 text-center">Kelas Reguler</th>
+                                    <th scope="col" class="py-3 text-center">Keterangan</th>
+                                </tr>
+                            </thead>
+                            <tbody class="small text-muted">
+                                <tr>
+                                    <td class="ps-4 fw-bold text-dark">Biaya Pendaftaran & Seleksi</td>
+                                    <td class="text-center fw-bold text-dark">Rp 150.000</td>
+                                    <td>Sekali bayar di awal pendaftaran</td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-4 fw-bold text-dark">Dana Sumbangan Pendidikan (DSP) / Uang Pangkal</td>
+                                    <td class="text-center fw-bold text-dark">Rp 2.500.000</td>
+                                    <td>Dapat diangsur 3x dalam 1 tahun pertama</td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-4 fw-bold text-dark">Sumbangan Pembinaan Pendidikan (SPP) Bulanan</td>
+                                    <td class="text-center fw-bold text-dark">Rp 200.000</td>
+                                    <td>Jatuh tempo setiap tanggal 10 tiap bulan</td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-4 fw-bold text-dark">Biaya Seragam Sekolah (5 Setel Lengkap)</td>
+                                    <td class="text-center fw-bold text-dark">Rp 950.000</td>
+                                    <td>Sekali bayar untuk seluruh tahun sekolah</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="alert alert-warning mt-3 rounded-4 small p-3" role="alert">
+                        <i class="fas fa-triangle-exclamation me-2"></i>*Biaya di atas sewaktu-waktu dapat berubah sesuai dengan kebijakan Yayasan Pendidikan Perintis. Pengurangan biaya berlaku bagi penerima program beasiswa khusus.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FORMULIR PENDAFTARAN SIMULASI -->
+    <section id="pendaftaran-simulasi" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow p-5 rounded-4 bg-white" style="border-top: 6px solid var(--brand-red) !important;">
+                        <h3 class="fw-bold mb-2 text-center text-brand-red">Simulasi Pendaftaran Online</h3>
+                        <p class="text-muted text-center small mb-4">Uji coba pengisian formulir pendaftaran digital sekolah untuk mendapatkan bukti registrasi sementara Anda.</p>
+                        
+                        <form id="ppdbSimForm">
+                            <div class="mb-3">
+                                <label for="ppdbNama" class="form-label fw-bold">Nama Lengkap Pendaftar</label>
+                                <input type="text" class="form-control rounded-3" id="ppdbNama" placeholder="Contoh: Ahmad Samsudin" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="ppdbAsal" class="form-label fw-bold">Asal Sekolah (SMP / MTs)</label>
+                                <input type="text" class="form-control rounded-3" id="ppdbAsal" placeholder="Contoh: SMPN 1 Pameungpeuk" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="ppdbJurusan" class="form-label fw-bold">Pilihan Program Keahlian (Jurusan)</label>
+                                <select class="form-select rounded-3" id="ppdbJurusan" required>
+                                    <option value="" disabled selected>Pilih salah satu program keahlian</option>
+                                    <option value="Teknik Komputer Jaringan (TKJ)">Teknik Komputer Jaringan (TKJ)</option>
+                                    <option value="Teknik Kendaraan Ringan (TKR)">Teknik Kendaraan Ringan (TKR)</option>
+                                    <option value="Akuntansi (AK)">Akuntansi (AK)</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="ppdbEmail" class="form-label fw-bold">Alamat Email Aktif</label>
+                                <input type="email" class="form-control rounded-3" id="ppdbEmail" placeholder="Contoh: ahmad@gmail.com" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="ppdbWa" class="form-label fw-bold">Nomor WhatsApp Aktif</label>
+                                <input type="tel" class="form-control rounded-3" id="ppdbWa" placeholder="Contoh: 081234567890" required>
+                            </div>
+                            <button type="submit" class="btn btn-brand-red w-100 py-3 rounded-pill fw-bold"><i class="fas fa-paper-plane me-2"></i>Kirim Data Pendaftaran</button>
+                        </form>
+                        
+                        <!-- Simulasi Success Receipt Container -->
+                        <div id="ppdbSuccessResult"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FAQ SECTION (ACCORDION) -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pertanyaan Sering Diajukan (FAQ)</h2>
+                <p>Temukan jawaban cepat atas pertanyaan seputar PPDB SMK Perintis Kabupaten Bandung</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion accordion-flush rounded-4 overflow-hidden shadow-sm" id="accordionPPDB">
+                        <div class="accordion-item border-bottom">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Kapan periode pendaftaran PPDB SMK Perintis dibuka?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionPPDB">
+                                <div class="accordion-body text-muted small">
+                                    PPDB T.A. 2026/2027 dibuka dalam 3 Gelombang: Gelombang 1 (Januari - Maret), Gelombang 2 (April - Juni), dan Gelombang 3 (Juli) jika kuota kelas belum terpenuhi. Daftarkan diri lebih awal untuk mendapatkan potongan formulir khusus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-bottom">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Apakah ada tes fisik / tes kesehatan untuk mendaftar?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionPPDB">
+                                <div class="accordion-body text-muted small">
+                                    Ya, untuk pendaftar jurusan Teknik Kendaraan Ringan (TKR) dan Teknik Komputer Jaringan (TKJ), disyaratkan tidak buta warna parsial/total demi kelancaran kegiatan praktik bengkel dan laboratorium kelistrikan.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-bottom">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Bagaimana sistem pembayaran angsuran uang DSP?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionPPDB">
+                                <div class="accordion-body text-muted small">
+                                    Uang pangkal DSP sebesar Rp 2.500.000 dapat diangsur sebanyak 3 kali dalam setahun pertama (Daftar ulang awal minimal Rp 1.000.000, angsuran ke-2 saat Penilaian Tengah Semester, dan angsuran ke-3 saat Penilaian Akhir Semester).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    Apakah lulusan SMK Perintis langsung disalurkan kerja?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionPPDB">
+                                <div class="accordion-body text-muted small">
+                                    Melalui Lembaga Bursa Kerja Khusus (BKK) sekolah, kami bekerja sama dengan puluhan pabrik perakitan, ATPM, dealer otomotif, ISP, and kantor akuntan publik untuk menjadwalkan seleksi rekrutmen kerja khusus siswa tingkat akhir.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 footer-logo-desc">
+                    <img src="assets/logo.png" alt="Logo Footer SMK Perintis">
+                    <p class="mt-3">
+                        SMK Perintis Kabupaten Bandung adalah lembaga pendidikan kejuruan yang melahirkan insan berkompetensi tinggi, kreatif, berdaya saing global, serta berlandaskan budi pekerti luhur.
+                    </p>
+                    <div class="footer-social-buttons">
+                        <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Tautan Kilat</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil Sekolah</a></li>
+                        <li><a href="jurusan.html">Program Keahlian</a></li>
+                        <li><a href="ppdb.html">Info PPDB / SPMB</a></li>
+                        <li><a href="kontak.html">Kontak Kami</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Program Keahlian</h5>
+                    <ul class="footer-links">
+                        <li><a href="jurusan.html#tkj">Teknik Komputer Jaringan</a></li>
+                        <li><a href="jurusan.html#tkr">Teknik Kendaraan Ringan</a></li>
+                        <li><a href="jurusan.html#akuntansi">Akuntansi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Jam Layanan Kampus</h5>
+                    <ul class="footer-links" style="pointer-events: none;">
+                        <li><span class="text-white d-block fw-bold mb-1">Senin - Kamis</span> 07.30 - 15.00 WIB</li>
+                        <li><span class="text-white d-block fw-bold mb-1">Jumat</span> 07.30 - 14.30 WIB</li>
+                        <li><span class="text-white d-block fw-bold mb-1">Sabtu - Minggu</span> Libur Pelayanan</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom text-center">
+                <p class="m-0">&copy; 2026 SMK Perintis Kabupaten Bandung. Hak Cipta Dilindungi Undang-Undang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 9. MOBILE / TABLET BOTTOM NAVIGATION (UNINUS DESIGN) -->
+    <div class="mobile-nav-panel">
+        <a href="index.html" class="mobile-nav-item">
+            <i class="fas fa-house"></i>
+            <span>Beranda</span>
+        </a>
+        <a href="profil.html" class="mobile-nav-item">
+            <i class="fas fa-circle-info"></i>
+            <span>Profil</span>
+        </a>
+        <a href="ppdb.html" class="mobile-nav-center-btn">
+            <div class="mobile-nav-center-inner">
+                <i class="fas fa-user-plus text-brand-red"></i>
+            </div>
+            <span class="d-block text-center mt-1 font-weight-bold" style="font-size: 0.65rem; color: var(--brand-red);">PPDB 2026</span>
+        </a>
+        <a href="jurusan.html" class="mobile-nav-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Jurusan</span>
+        </a>
+        <a href="kontak.html" class="mobile-nav-item">
+            <i class="fas fa-envelope"></i>
+            <span>Kontak</span>
+        </a>
+    </div>
+
+    <!-- 10. FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/62812000000?text=Halo%20Admin%20SMK%20Perintis%20Kab%20Bandung" class="wa-floating-btn" target="_blank" aria-label="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap Bundle with Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP for scroll animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

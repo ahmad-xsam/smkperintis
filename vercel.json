@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "routes": [
+    { "src": "/index", "dest": "/index.html" },
+    { "src": "/profil", "dest": "/profil.html" },
+    { "src": "/jurusan", "dest": "/jurusan.html" },
+    { "src": "/ppdb", "dest": "/ppdb.html" },
+    { "src": "/kontak", "dest": "/kontak.html" }
+  ]
+}

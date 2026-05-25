@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Keahlian | SMK Perintis Kabupaten Bandung</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Detail kurikulum, fasilitas praktik, prospek kerja, dan kompetensi lulusan untuk program keahlian TKJ, TKR, dan Akuntansi di SMK Perintis Kabupaten Bandung.">
+    <meta name="keywords" content="Kurikulum TKJ, Kurikulum TKR, Kurikulum Akuntansi, Praktik Vokasi Bandung, Kompetensi Keahlian SMK Perintis">
+    <meta name="author" content="SMK Perintis Kab Bandung">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. TOP BAR INFO -->
+    <div class="bg-brand-gradient text-white py-2 d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center small font-weight-bold">
+            <div>
+                <span class="me-4"><i class="fas fa-phone me-2 text-brand-yellow"></i> 022-589-XXX / 0812-XXXX-XXXX</span>
+                <span><i class="fas fa-envelope me-2 text-brand-yellow"></i> info@smkperintis.sch.id</span>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <span><i class="fas fa-map-marker-alt me-2 text-brand-yellow"></i> Katapang Andir KM3, Bandung</span>
+                <button id="themeToggle" class="theme-toggle-btn btn-sm" title="Ganti Tema" aria-label="Ganti Tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. MAIN HEADER & NAVIGATION -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/logo.png" alt="Logo SMK Perintis" class="me-3" style="max-height: 55px; height: auto;">
+                <div>
+                    <h5 class="m-0 fw-bold tracking-tight text-brand-red">SMK PERINTIS</h5>
+                    <span class="text-muted d-block small" style="font-size: 0.75rem; font-weight: 600;">KABUPATEN BANDUNG</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggler border-0 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#smkNavbar" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-brand-red"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="smkNavbar">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="profil.html#sejarah">Sejarah Sekolah</a></li>
+                            <li><a class="dropdown-item" href="profil.html#visi-misi">Visi & Misi</a></li>
+                            <li><a class="dropdown-item" href="profil.html#struktur">Struktur Organisasi</a></li>
+                            <li><a class="dropdown-item" href="profil.html#fasilitas">Fasilitas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Program Keahlian</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#tkj"><i class="fas fa-laptop-code text-brand-red me-2"></i>Teknik Komputer Jaringan</a></li>
+                            <li><a class="dropdown-item" href="#tkr"><i class="fas fa-car-wrench text-brand-green me-2"></i>Teknik Kendaraan Ringan</a></li>
+                            <li><a class="dropdown-item" href="#akuntansi"><i class="fas fa-calculator text-brand-yellow me-2"></i>Akuntansi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ppdb.html">Info PPDB / SPMB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="ppdb.html" class="btn btn-brand-red rounded-pill px-4 fw-bold">Daftar PPDB 2026</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. BREADCRUMB HERO -->
+    <section class="bg-brand-gradient text-white py-5 text-center">
+        <div class="container py-3">
+            <h1 class="display-4 fw-bold">Program Keahlian</h1>
+            <p class="lead m-0 opacity-75">Kurikulum aplikatif yang dirancang selaras dengan dunia usaha dan industri modern</p>
+        </div>
+    </section>
+
+    <!-- 4. TKJ SECTION -->
+    <section id="tkj" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="pe-lg-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="bg-danger text-white rounded-3 p-3 d-inline-flex fs-4"><i class="fas fa-network-wired"></i></div>
+                            <h2 class="fw-bold m-0 text-brand-red">Teknik Komputer Jaringan</h2>
+                        </div>
+                        <p class="text-muted" style="text-align: justify;">
+                            Program Keahlian Teknik Komputer Jaringan (TKJ) SMK Perintis berfokus pada penguasaan teknologi jaringan komputer, baik kabel maupun nirkabel (wireless), perancangan topologi jaringan local area network (LAN) dan wide area network (WAN), administrasi server Linux/Windows, manajemen routerboard Mikrotik & Cisco, serta dasar-dasar cyber security.
+                        </p>
+                        <p class="text-muted" style="text-align: justify;">
+                            Siswa juga diajarkan pemecahan masalah hardware komputer, troubleshooting jaringan internet, pengoperasian cloud computing, serta pemrograman dasar (Python/JavaScript) pendukung teknologi Internet of Things (IoT).
+                        </p>
+                        
+                        <h5 class="fw-bold mt-4 mb-3">Kompetensi Utama:</h5>
+                        <div class="row g-2">
+                            <div class="col-sm-6"><i class="fas fa-circle-check text-brand-green me-2"></i>Instalasi LAN, WAN & Fiber Optic</div>
+                            <div class="col-sm-6"><i class="fas fa-circle-check text-brand-green me-2"></i>Konfigurasi Router Cisco & Mikrotik</div>
+                            <div class="col-sm-6"><i class="fas fa-circle-check text-brand-green me-2"></i>Administrasi Server Linux & Windows</div>
+                            <div class="col-sm-6"><i class="fas fa-circle-check text-brand-green me-2"></i>Keamanan Siber & Cloud Computing</div>
+                        </div>
+
+                        <h5 class="fw-bold mt-4 mb-3">Prospek Karir & Profesi:</h5>
+                        <p class="text-muted">Network Administrator, IT Technical Support, System Administrator, Cloud Administrator, Wirausahawan Toko Komputer / Internet Service Provider.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=600" alt="Siswa Belajar TKJ" class="img-fluid rounded-4 shadow-lg border-bottom border-danger border-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TKR SECTION -->
+    <section id="tkr" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5 flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="bg-success text-white rounded-3 p-3 d-inline-flex fs-4"><i class="fas fa-car-wrench"></i></div>
+                            <h2 class="fw-bold m-0 text-brand-green">Teknik Kendaraan Ringan</h2>
+                        </div>
+                        <p class="text-muted" style="text-align: justify;">
+                            Program Keahlian Teknik Kendaraan Ringan (TKR) mendidik siswa menguasai teknologi otomotif kendaraan beroda empat secara komprehensif. Pembelajaran meliputi pemeliharaan mesin kendaraan (engine tune-up, overhaul), sistem pemindah tenaga (kopling, transmisi, gardan), pemeliharaan sasis (sistem kemudi, suspensi, pengereman ABS), serta kelistrikan bodi otomotif.
+                        </p>
+                        <p class="text-muted" style="text-align: justify;">
+                            Didukung dengan teknologi diagnosis mesin modern (OBD scan tool), para siswa dilatih mendeteksi gangguan sistem Electronic Fuel Injection (EFI) pada mesin bensin dan diesel modern, serta pemahaman dasar teknologi mobil hybrid dan listrik (EV).
+                        </p>
+                        
+                        <h5 class="fw-bold mt-4 mb-3">Kompetensi Utama:</h5>
+                        <div class="row g-2">
+                            <div class="col-sm-6"><i class="fas fa-circle-check text-brand-green me-2"></i>Perbaikan Mesin Kendaraan Ringan</div>
+                            <div class="col-sm-6"><i class="fas fa-circle-check text-brand-green me-2"></i>Sistem Chasis & Transmisi Manual/Auto</div>
+                            <div class="col-sm-6"><i class="fas fa-circle-check text-brand-green me-2"></i>Sistem EFI & Sensor Diagnosis OBD</div>
+                            <div class="col-sm-6"><i class="fas fa-circle-check text-brand-green me-2"></i>Sistem Air Conditioning (AC) Mobil</div>
+                        </div>
+
+                        <h5 class="fw-bold mt-4 mb-3">Prospek Karir & Profesi:</h5>
+                        <p class="text-muted">Mekanik Bengkel Resmi Otomotif, Service Advisor, Operator Pabrik Perakitan Otomotif, Penilai Mobil Bekas (Inspector), Wirausahawan Bengkel Mobil Mandiri.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=600" alt="Bengkel TKR" class="img-fluid rounded-4 shadow-lg border-bottom border-success border-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. AKUNTANSI SECTION -->
+    <section id="akuntansi" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="pe-lg-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="bg-warning text-dark rounded-3 p-3 d-inline-flex fs-4"><i class="fas fa-calculator"></i></div>
+                            <h2 class="fw-bold m-0 text-brand-yellow">Akuntansi & Keuangan</h2>
+                        </div>
+                        <p class="text-muted" style="text-align: justify;">
+                            Program Keahlian Akuntansi membekali siswa dengan kompetensi pencatatan transaksi keuangan, penyusunan jurnal umum hingga laporan keuangan perusahaan jasa, dagang, dan manufaktur. Siswa dilatih menguasai administrasi perpajakan (PPH, PPN), rekonsiliasi bank, kasir, serta pengelolaan neraca saldo berbasis spreadsheet digital.
+                        </p>
+                        <p class="text-muted" style="text-align: justify;">
+                            Siswa kami juga menguasai komputer akuntansi menggunakan berbagai aplikasi standar industri seperti MYOB, Accurate, dan Zahir Accounting. Melalui praktik di Bank Mini sekolah, siswa mendapatkan simulasi layanan keuangan perbankan secara riil.
+                        </p>
+                        
+                        <h5 class="fw-bold mt-4 mb-3">Kompetensi Utama:</h5>
+                        <div class="row g-2">
+                            <div class="col-sm-6"><i class="fas fa-circle-check text-brand-green me-2"></i>Penyusunan Laporan Keuangan Riil</div>
+                            <div class="col-sm-6"><i class="fas fa-circle-check text-brand-green me-2"></i>Komputer Akuntansi MYOB & Accurate</div>
+                            <div class="col-sm-6"><i class="fas fa-circle-check text-brand-green me-2"></i>Administrasi Perpajakan & E-Faktur</div>
+                            <div class="col-sm-6"><i class="fas fa-circle-check text-brand-green me-2"></i>Sistem Audit Kas & Perbankan</div>
+                        </div>
+
+                        <h5 class="fw-bold mt-4 mb-3">Prospek Karir & Profesi:</h5>
+                        <p class="text-muted">Staff Keuangan (Finance Staff), Staff Pajak (Tax Clerk), Kasir Bank / Supermarket, Junior Auditor, Staff Administrasi Perusahaan, Wirausahawan Jasa Pembukuan.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600" alt="Belajar Akuntansi" class="img-fluid rounded-4 shadow-lg border-bottom border-warning border-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 footer-logo-desc">
+                    <img src="assets/logo.png" alt="Logo Footer SMK Perintis">
+                    <p class="mt-3">
+                        SMK Perintis Kabupaten Bandung adalah lembaga pendidikan kejuruan yang melahirkan insan berkompetensi tinggi, kreatif, berdaya saing global, serta berlandaskan budi pekerti luhur.
+                    </p>
+                    <div class="footer-social-buttons">
+                        <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Tautan Kilat</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil Sekolah</a></li>
+                        <li><a href="jurusan.html">Program Keahlian</a></li>
+                        <li><a href="ppdb.html">Info PPDB / SPMB</a></li>
+                        <li><a href="kontak.html">Kontak Kami</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Program Keahlian</h5>
+                    <ul class="footer-links">
+                        <li><a href="jurusan.html#tkj">Teknik Komputer Jaringan</a></li>
+                        <li><a href="jurusan.html#tkr">Teknik Kendaraan Ringan</a></li>
+                        <li><a href="jurusan.html#akuntansi">Akuntansi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Jam Layanan Kampus</h5>
+                    <ul class="footer-links" style="pointer-events: none;">
+                        <li><span class="text-white d-block fw-bold mb-1">Senin - Kamis</span> 07.30 - 15.00 WIB</li>
+                        <li><span class="text-white d-block fw-bold mb-1">Jumat</span> 07.30 - 14.30 WIB</li>
+                        <li><span class="text-white d-block fw-bold mb-1">Sabtu - Minggu</span> Libur Pelayanan</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom text-center">
+                <p class="m-0">&copy; 2026 SMK Perintis Kabupaten Bandung. Hak Cipta Dilindungi Undang-Undang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. MOBILE / TABLET BOTTOM NAVIGATION (UNINUS DESIGN) -->
+    <div class="mobile-nav-panel">
+        <a href="index.html" class="mobile-nav-item">
+            <i class="fas fa-house"></i>
+            <span>Beranda</span>
+        </a>
+        <a href="profil.html" class="mobile-nav-item">
+            <i class="fas fa-circle-info"></i>
+            <span>Profil</span>
+        </a>
+        <a href="ppdb.html" class="mobile-nav-center-btn">
+            <div class="mobile-nav-center-inner">
+                <i class="fas fa-user-plus"></i>
+            </div>
+            <span class="d-block text-center mt-1 font-weight-bold" style="font-size: 0.65rem; color: var(--brand-red);">PPDB 2026</span>
+        </a>
+        <a href="jurusan.html" class="mobile-nav-item active">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Jurusan</span>
+        </a>
+        <a href="kontak.html" class="mobile-nav-item">
+            <i class="fas fa-envelope"></i>
+            <span>Kontak</span>
+        </a>
+    </div>
+
+    <!-- 9. FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/62812000000?text=Halo%20Admin%20SMK%20Perintis%20Kab%20Bandung" class="wa-floating-btn" target="_blank" aria-label="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap Bundle with Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP for scroll animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
