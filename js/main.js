@@ -94,23 +94,28 @@ function initGsapAnimations() {
         return;
     }
 
-    // Register ScrollTrigger plugin if available
+    // Register ScrollTrigger and TextPlugin if available
     if (typeof ScrollTrigger !== "undefined") {
         gsap.registerPlugin(ScrollTrigger);
     }
+    if (typeof TextPlugin !== "undefined") {
+        gsap.registerPlugin(TextPlugin);
+    }
 
-    // A. Hero Entry Timeline
-    const heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
-    
-    heroTl.from(".navbar-brand", { y: -20, opacity: 0, duration: 0.6 })
-          .from(".nav-item", { y: -20, opacity: 0, duration: 0.4, stagger: 0.05 }, "-=0.3")
-          .from(".hero-content h4", { y: 20, opacity: 0, duration: 0.6 }, "-=0.2")
-          .from(".hero-content h1", { scale: 0.95, opacity: 0, duration: 0.8 }, "-=0.4")
-          .from(".hero-btn-group .btn", { y: 30, opacity: 0, duration: 0.6, stagger: 0.15 }, "-=0.4");
+    // A. Hero Entry Timeline (Only run if hero content is present on the page)
+    if (document.querySelector(".hero-content")) {
+        const heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
+        
+        heroTl.from(".navbar-brand", { y: -20, opacity: 0, duration: 0.6 })
+              .from(".nav-item", { y: -20, opacity: 0, duration: 0.4, stagger: 0.05 }, "-=0.3")
+              .from(".hero-content h4", { y: 20, opacity: 0, duration: 0.6 }, "-=0.2")
+              .from(".hero-content h1", { scale: 0.95, opacity: 0, duration: 0.8 }, "-=0.4")
+              .from(".hero-btn-group .btn", { y: 30, opacity: 0, duration: 0.6, stagger: 0.15 }, "-=0.4");
+    }
 
     // Typewriting animation for school slogan in the hero
     const typedTarget = document.getElementById("typed");
-    if (typedTarget) {
+    if (typedTarget && typeof TextPlugin !== "undefined") {
         const slogans = [
             "Sekolah Unggul, Berkarakter & Mandiri",
             "Menyiapkan Generasi Berkelayakan Kerja Tinggi",
